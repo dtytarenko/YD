@@ -1,0 +1,251 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container{
+    max-width: calc(100% - 30px);
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.section__title{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 99;
+}
+
+.header .container{
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+
+.header__nav{
+    margin-top: 10px;
+}
+.header__link{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav_list_item_link{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.header__join{
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    padding: 6px 12px;
+    max-width: 110px;
+    max-height: 30px;
+    width: calc(100% - 40px);
+    height: 38px;
+    margin: 8px auto 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* INTRO BLOCK */
+
+.intro{
+    min-height: 100vh;
+    padding-top: 150px;
+    background-image: url('../images/laptop.jpg');
+    background-position: center center;
+    width: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.intro .container{
+    background-color: rgb(19,15,29, 0.8);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 16px;
+}
+
+.intro__title,
+.intro__subtitle{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    white-space: pre-line;
+    font-weight: 400;
+}
+
+.intro__title{
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.intro__subtitle{
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.intro__link{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    font-size: 18px;
+    padding: 6px 12px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.courses__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.courses__list_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 50px;
+}
+
+.courses__list_item_img{
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+}
+
+.courses__list_item_title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.courses__list_item_info{
+    font-style: italic;
+    color: #6c757d;
+}
+
+.bg{
+    background-image: url('../images/background_image.jpg');
+    height: 25vh;
+    width: auto;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.offers__list_item{
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.offers__list_item:before{
+    content: '';
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-image: url('../images/offers_1.png');
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.offers__list_item:nth-of-type(2):before{
+    background-image: url('../images/offers_2.png');
+}
+
+.offers__list_item:nth-of-type(3):before{
+    background-image: url('../images/offers_3.png');
+}
+
+.offers__list_item_title{
+    font-size: 24px;
+    line-height: 26px;
+    margin-top: 0;
+}
+
+.offers__list_item_price{
+    color: #6c757d;
+}
+
+.offers__list_item_descr{
+    margin-bottom: 30px;
+}
+
+.offers__list_item_buy{
+    background-color: #dc3545;
+    border-color: #ffffff;
+    color: #fff;
+    padding: 10px;
+    max-width: 210px;
+    max-height: 38px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.offers__list_item_buy:hover{
+    background-color: green;
+    border-color: #bd2130;
+}
+
+.contacts__info,
+.contacts__descr{
+    text-align: center;
+    white-space: pre-line;
+}
+
+.contacts__descr{
+    font-style: italic;
+}
+
+#map{
+    width: 100%;
+    height: 300px;
+}
